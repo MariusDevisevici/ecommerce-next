@@ -1,12 +1,14 @@
 import React from "react";
+import Banner from "../../components/Banner";
 import Crsl from "../../components/Carousel";
-import Header from "../../components/Header";
+import Layout from "../../components/Layout";
 
 function index() {
   return (
-    <>
-      <Crsl></Crsl>
-    </>
+    <Layout>
+      <Crsl />
+      <Banner />
+    </Layout>
   );
 }
 

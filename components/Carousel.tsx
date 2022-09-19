@@ -4,19 +4,33 @@ import Image from "next/image";
 
 function Crsl() {
   return (
-    <div className="h-96 w-full">
-      <Carousel className="h-96 w-full" autoPlay={true} showThumbs={false}>
-        <div className="h-96 w-full">
-          <Image src="/slider-ferd.webp" layout="fill" />
+    <>
+      <Carousel
+        className="h-carousel w-full"
+        autoPlay={true}
+        showThumbs={false}
+        showIndicators={false}
+        showArrows={false}
+        showStatus={false}
+        emulateTouch={true}
+        swipeable={true}
+        infiniteLoop={true}
+      >
+        <div className="h-carousel w-full">
+          <Image src="/slider-ferd.webp" layout="fill" objectFit="cover" />
         </div>
         <div className="h-96 w-full">
-          <Image src="/slider-freemotion.webp" layout="fill" />
+          <Image
+            src="/slider-freemotion.webp"
+            layout="fill"
+            objectFit="cover"
+          />
         </div>
-        <div className="h-96 w-full">
-          <Image src="/slider-rocdk.webp" layout="fill" />
+        <div className="h-carousel w-full">
+          <Image src="/slider-rocdk.webp" layout="fill" objectFit="cover" />
         </div>
       </Carousel>
-    </div>
+    </>
   );
 }
 
