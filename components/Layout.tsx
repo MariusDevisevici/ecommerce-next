@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Header from "./Header";
 function Layout({ children }: { children: any }) {
-  const [navOpen, setNavOpen] = useState<boolean>(false);
+  const [navOpen, setNavOpen] = useState(false);
 
   const toggleNav = (status: boolean) => {
     return setNavOpen(status);

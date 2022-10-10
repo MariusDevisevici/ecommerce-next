@@ -5,10 +5,10 @@ import Layout from "../../components/Layout";
 
 function index() {
   return (
-    <Layout>
+    <>
       <Crsl />
       <Banner />
-    </Layout>
+    </>
   );
 }
 
