@@ -8,6 +8,7 @@ module.exports = {
         gri: "rgb(139,139,139)",
         primary: "rgb(240,169,89)",
         darkBrown: "rgb(40,27,29)",
+        blackCustom: "rgb(51,51,51)",
       },
       height: {
         hamburgerMenuBar: "2px",
