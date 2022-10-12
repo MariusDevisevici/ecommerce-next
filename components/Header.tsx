@@ -27,8 +27,8 @@ function Header({
       <nav
         className={
           navOpen
-            ? "fixed top-0 left-0 z-10 w-60 lg:w-0 h-full pt-10 overflow-x-hidden duration-500 bg-white lg:hidden text-gri"
-            : "fixed top-0 left-0 z-10 w-0 h-full pt-10 overflow-x-hidden duration-500 bg-white lg:hidden text-gri"
+            ? "fixed top-0 left-0 z-10 w-60 lg:w-0 h-full pt-10 bg-blackCustom overflow-x-hidden duration-500  lg:hidden text-gri"
+            : "fixed top-0 left-0 z-10 w-0 h-full pt-10 overflow-x-hidden duration-500 bg-blackCustom lg:hidden text-gri"
         }
       >
         <ul className="relative flex flex-col text-xs font-medium duration-300">
@@ -39,10 +39,10 @@ function Header({
           </li>
           <li className="duration-300 ">
             <form action="" className="flex items-center justify-center p-5 ">
-              <div className="flex items-center border w-fit">
+              <div className="flex items-center border border-stone-800 w-fit">
                 <input
                   type="text"
-                  className="w-full h-full text-lg border-none shadow-none placeholder:text-xs focus:shadow-none focus:ring-offset-0 focus:ring-0"
+                  className="bg-inherit w-full h-full text-lg border-none shadow-none placeholder:text-xs focus:shadow-none focus:ring-offset-0 focus:ring-0"
                   aria-label="search"
                   placeholder="Search in..."
                 />
@@ -55,25 +55,25 @@ function Header({
               </div>
             </form>
           </li>
-          <li className="flex items-center justify-between p-3 duration-300 border-b border-gray-200 cursor-pointer hover:text-primary whitespace-nowrap">
+          <li className="flex items-center justify-between p-3 duration-300 border-b border-stone-800 cursor-pointer hover:text-primary whitespace-nowrap">
             <a href="">PENTRU EI</a>
             <span className="text-xs">
               <FontAwesomeIcon icon={faChevronDown} />
             </span>
           </li>
-          <li className="flex items-center justify-between p-3 duration-300 border-b border-gray-200 cursor-pointer hover:text-primary whitespace-nowrap">
+          <li className="flex items-center justify-between p-3 duration-300 border-b border-stone-800 cursor-pointer hover:text-primary whitespace-nowrap">
             <a href="">PENTRU VOI</a>
             <span className="text-xs">
               <FontAwesomeIcon icon={faChevronDown} />
             </span>
           </li>
-          <li className="flex items-center justify-between p-3 duration-300 border-b border-gray-200 cursor-pointer hover:text-primary whitespace-nowrap">
+          <li className="flex items-center justify-between p-3 duration-300 border-b border-stone-800 cursor-pointer hover:text-primary whitespace-nowrap">
             <a href="">ACTIVITATI</a>
             <span className="text-xs">
               <FontAwesomeIcon icon={faChevronDown} />
             </span>
           </li>
-          <li className="flex items-center justify-between p-3 duration-300 border-b border-gray-200 cursor-pointer hover:text-primary whitespace-nowrap">
+          <li className="flex items-center justify-between p-3 duration-300 border-b border-stone-800 cursor-pointer hover:text-primary whitespace-nowrap">
             <a href="">CONTACT</a>
           </li>
         </ul>
