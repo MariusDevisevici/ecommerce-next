@@ -1,6 +1,4 @@
-type Props = {};
-
-const TopProducts = (props: Props) => {
+const TopProducts = () => {
   return <section>TopProducts</section>;
 };
 
