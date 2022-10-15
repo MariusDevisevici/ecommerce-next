@@ -17,17 +17,28 @@ function Crsl() {
         infiniteLoop={true}
       >
         <div className="h-carousel w-full">
-          <Image src="/slider-ferd.webp" layout="fill" objectFit="cover" />
+          <Image
+            src="/slider-ferd.webp"
+            layout="fill"
+            objectFit="cover"
+            alt="ferd"
+          />
         </div>
         <div className="h-96 w-full">
           <Image
             src="/slider-freemotion.webp"
             layout="fill"
             objectFit="cover"
+            alt="Lesa Freemotion"
           />
         </div>
         <div className="h-carousel w-full">
-          <Image src="/slider-rocdk.webp" layout="fill" objectFit="cover" />
+          <Image
+            src="/slider-rocdk.webp"
+            layout="fill"
+            objectFit="cover"
+            alt="Lesa Rocdk"
+          />
         </div>
       </Carousel>
     </>

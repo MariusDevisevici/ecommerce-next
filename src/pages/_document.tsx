@@ -4,11 +4,9 @@ export default function Document() {
   return (
     <Html lang="ro">
       <Head>
-        <meta charSet="UTF-8" />
         <meta name="description" content="Echipamente pentru caini" />
         <meta name="keywords" content="Caini, Lesa, Silviu" />
         <meta name="author" content="Devisevici Marius" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
         <title>Pawtrain</title>
         <link
