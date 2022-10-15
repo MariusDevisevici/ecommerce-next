@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+const defaultTheme = require("tailwindcss/defaultTheme");
 module.exports = {
   content: ["./src/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
   theme: {
@@ -18,8 +19,9 @@ module.exports = {
         hamburgerMenuBar: "1.4rem",
         banner: "95%",
       },
+
       boxShadow: {
-        bannerLayer: "inset 0 0 0 1000px rgba(240,169,89, .8)",
+        bannerShadow: " 0px 16px 15px -2px rgba(0, 0, 0, 0.24)",
       },
     },
   },

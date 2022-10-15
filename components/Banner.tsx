@@ -9,18 +9,18 @@ function Banner() {
       partialVisibilityGutter: 40, // this is needed to tell the amount of px that should be visible.
     },
     tablet: {
-      breakpoint: { max: 1024, min: 480 },
+      breakpoint: { max: 1024, min: 594 },
       items: 2,
       partialVisibilityGutter: 30, // this is needed to tell the amount of px that should be visible.
     },
     mobile: {
-      breakpoint: { max: 480, min: 0 },
+      breakpoint: { max: 594, min: 0 },
       items: 1,
       partialVisibilityGutter: 30, // this is needed to tell the amount of px that should be visible.
     },
   };
   return (
-    <div className="relative z-10 m-auto w-banner 2xl:w-2/3 -top-24">
+    <div className="relative z-10 m-auto w-banner 2xl:w-2/3 -top-24 shadow-bannerShadow">
       <Carousel
         draggable={true}
         swipeable={true}
@@ -46,7 +46,7 @@ function Banner() {
         />
         <BannerSlide
           backgroundImage={"url(/banner3.webp)"}
-          title={"CE CENTURA AR TREBUI SA ALEGI"}
+          title={"CE CENTURA  AR TREBUI SA ALEGI"}
           linkTo={""}
         />
         <BannerSlide
