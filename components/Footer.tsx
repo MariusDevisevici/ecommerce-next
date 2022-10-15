@@ -6,7 +6,7 @@ const Footer = () => {
         <a href="">Politica de confidentialitate</a>
       </div>
       <div>
-        <p>Copyright &copy; 2022 PawTrain. Toate drepturile rezervate.</p>
+        <p>Copyright &copy; 2022 PawTrain. Toate drepturile rezervates.</p>
       </div>
     </footer>
   );
