@@ -1,5 +1,6 @@
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import BannerSlide from "./BannerSlide";
 function Banner() {
   const responsive = {
     desktop: {
@@ -19,98 +20,42 @@ function Banner() {
     },
   };
   return (
-    <>
-      <div className="relative z-10 m-auto w-banner 2xl:w-2/3 -top-24">
-        <Carousel
-          draggable={true}
-          swipeable={true}
-          infinite={true}
-          arrows={false}
-          responsive={responsive}
-        >
-          <div
-            className="duration-300 bg-no-repeat bg-cover item h-60 hover:shadow-bannerLayer"
-            style={{
-              backgroundImage: "url(/harnessss.webp)",
-            }}
-          >
-            <h2 className="absolute text-3xl font-bold text-white top-2/4 left-10 -translate-y-2/4">
-              ALEGE HAMUL POTRIVIT <br /> NEVOILOR TALE
-            </h2>
-            <a
-              className="absolute p-2 text-white duration-300 translate-y-12 border border-white left-10 top-2/4 hover:bg-white hover:text-primary"
-              href=""
-            >
-              AFLA MAI MULTE
-            </a>
-          </div>
-          <div
-            className="duration-300 bg-no-repeat bg-cover item h-60 hover:shadow-bannerLayer"
-            style={{
-              backgroundImage: "url(/banner1.jpg)",
-            }}
-          >
-            <h2 className="absolute text-3xl font-bold text-white top-2/4 left-10 -translate-y-2/4 ">
-              CARE ESTE GEACA <br /> POTRIVITA
-            </h2>
-            <a
-              className="absolute p-2 text-white duration-300 translate-y-12 border border-white left-10 top-2/4 hover:bg-white hover:text-primary"
-              href=""
-            >
-              AFLA MAI MULTE
-            </a>
-          </div>
-          <div
-            className="duration-300 bg-no-repeat bg-cover item h-60 hover:shadow-bannerLayer"
-            style={{
-              backgroundImage: "url(/banner2.webp)",
-            }}
-          >
-            <h2 className="absolute text-3xl font-bold text-white top-2/4 left-10 -translate-y-2/4 ">
-              CUM SĂ GĂSEȘTI <br /> ZGARDA PERFECTĂ
-            </h2>
-            <a
-              className="absolute p-2 text-white duration-300 translate-y-12 border border-white left-10 top-2/4 hover:bg-white hover:text-primary"
-              href=""
-            >
-              AFLA MAI MULTE
-            </a>
-          </div>
-          <div
-            className="duration-300 bg-no-repeat bg-cover item h-60 hover:shadow-bannerLayer"
-            style={{
-              backgroundImage: "url(/banner3.webp)",
-            }}
-          >
-            <h2 className="absolute text-3xl font-bold text-white top-2/4 left-10 -translate-y-2/4 ">
-              CE CENTURA <br /> AR TREBUI SA ALEGI
-            </h2>
-            <a
-              className="absolute p-2 text-white duration-300 translate-y-12 border border-white left-10 top-2/4 hover:bg-white hover:text-primary"
-              href=""
-            >
-              AFLA MAI MULTE
-            </a>
-          </div>
-          <div
-            className="duration-300 bg-no-repeat bg-cover item h-60 hover:shadow-bannerLayer"
-            style={{
-              backgroundImage: "url(/coolz.webp)",
-            }}
-          >
-            <h2 className="absolute text-3xl font-bold text-white top-2/4 left-10 -translate-y-2/4 ">
-              7 ACTIVITATI COOL <br /> PENTRU VARA ASTA
-            </h2>
-            <a
-              className="absolute p-2 text-white duration-300 translate-y-12 border border-white left-10 top-2/4 hover:bg-white hover:text-primary"
-              href=""
-            >
-              AFLA MAI MULTE
-            </a>
-          </div>
-        </Carousel>
-      </div>
-    </>
+    <div className="relative z-10 m-auto w-banner 2xl:w-2/3 -top-24">
+      <Carousel
+        draggable={true}
+        swipeable={true}
+        infinite={true}
+        arrows={false}
+        responsive={responsive}
+      >
+        <BannerSlide
+          backgroundImage={"url(/harnessss.webp)"}
+          title={"ALEGE HAMUL POTRIVIT  NEVOILOR TALE"}
+          linkTo={""}
+        />
+
+        <BannerSlide
+          backgroundImage={"url(/banner1.jpg)"}
+          title={"CARE ESTE GEACA POTRIVITA"}
+          linkTo={""}
+        />
+        <BannerSlide
+          backgroundImage={"url(/banner2.webp)"}
+          title={"CUM SĂ GĂSEȘTI ZGARDA PERFECTĂ"}
+          linkTo={""}
+        />
+        <BannerSlide
+          backgroundImage={"url(/banner3.webp)"}
+          title={"CE CENTURA AR TREBUI SA ALEGI"}
+          linkTo={""}
+        />
+        <BannerSlide
+          backgroundImage={"url(/coolz.webp)"}
+          title={"7 ACTIVITATI COOL PENTRU VARA ASTA"}
+          linkTo={""}
+        />
+      </Carousel>
+    </div>
   );
 }
 

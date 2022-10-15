@@ -27,8 +27,8 @@ function Header({
       <nav
         className={
           navOpen
-            ? "fixed top-0 left-0 z-10 w-60 lg:w-0 h-full pt-10 bg-blackCustom overflow-x-hidden duration-500  lg:hidden text-gri"
-            : "fixed top-0 left-0 z-10 w-0 h-full pt-10 overflow-x-hidden duration-500 bg-blackCustom lg:hidden text-gri"
+            ? "fixed top-0 left-0 z-30 w-72 lg:w-0 h-full pt-10 bg-blackCustom overflow-x-hidden duration-500  lg:hidden text-white"
+            : "fixed top-0 left-0 z-30 w-0 h-full pt-10 overflow-x-hidden duration-500 bg-blackCustom lg:hidden text-white"
         }
       >
         <ul className="relative flex flex-col text-xs font-medium duration-300">
@@ -39,10 +39,10 @@ function Header({
           </li>
           <li className="duration-300 ">
             <form action="" className="flex items-center justify-center p-5 ">
-              <div className="flex items-center border border-stone-800 w-fit">
+              <div className="flex items-center border border-stone-500 w-fit">
                 <input
                   type="text"
-                  className="bg-inherit w-full h-full text-lg border-none shadow-none placeholder:text-xs focus:shadow-none focus:ring-offset-0 focus:ring-0"
+                  className="bg-inherit w-full p-2 h-full text-lg border-none shadow-none placeholder:text-xs focus:shadow-none focus:ring-offset-0 focus:ring-0"
                   aria-label="search"
                   placeholder="Search in..."
                 />
@@ -55,25 +55,25 @@ function Header({
               </div>
             </form>
           </li>
-          <li className="flex items-center justify-between p-3 duration-300 border-b border-stone-800 cursor-pointer hover:text-primary whitespace-nowrap">
+          <li className="flex items-center justify-between p-3 duration-300 border-b border-stone-400 cursor-pointer hover:text-primary whitespace-nowrap">
             <a href="">PENTRU EI</a>
             <span className="text-xs">
               <FontAwesomeIcon icon={faChevronDown} />
             </span>
           </li>
-          <li className="flex items-center justify-between p-3 duration-300 border-b border-stone-800 cursor-pointer hover:text-primary whitespace-nowrap">
+          <li className="flex items-center justify-between p-3 duration-300 border-b border-stone-400 cursor-pointer hover:text-primary whitespace-nowrap">
             <a href="">PENTRU VOI</a>
             <span className="text-xs">
               <FontAwesomeIcon icon={faChevronDown} />
             </span>
           </li>
-          <li className="flex items-center justify-between p-3 duration-300 border-b border-stone-800 cursor-pointer hover:text-primary whitespace-nowrap">
+          <li className="flex items-center justify-between p-3 duration-300 border-b border-stone-400 cursor-pointer hover:text-primary whitespace-nowrap">
             <a href="">ACTIVITATI</a>
             <span className="text-xs">
               <FontAwesomeIcon icon={faChevronDown} />
             </span>
           </li>
-          <li className="flex items-center justify-between p-3 duration-300 border-b border-stone-800 cursor-pointer hover:text-primary whitespace-nowrap">
+          <li className="flex items-center justify-between p-3 duration-300 border-b border-stone-400 cursor-pointer hover:text-primary whitespace-nowrap">
             <a href="">CONTACT</a>
           </li>
         </ul>
@@ -124,16 +124,24 @@ function Header({
           <nav>
             <ul className="flex gap-4 text-lg text-white duration-300 ">
               <li className="hidden cursor-pointer lg:block hover:text-primary">
-                <FontAwesomeIcon icon={faMagnifyingGlass} />
+                <button>
+                  <FontAwesomeIcon icon={faMagnifyingGlass} />
+                </button>
               </li>
               <li className="duration-300 cursor-pointer hover:text-primary">
-                <FontAwesomeIcon icon={faHeart} />
+                <button>
+                  <FontAwesomeIcon icon={faHeart} />
+                </button>
               </li>
               <li className="duration-300 cursor-pointer hover:text-primary">
-                <FontAwesomeIcon icon={faCartShopping} />
+                <button>
+                  <FontAwesomeIcon icon={faCartShopping} />
+                </button>
               </li>
               <li className="duration-300 cursor-pointer hover:text-primary">
-                <FontAwesomeIcon icon={faUser} />
+                <button>
+                  <FontAwesomeIcon icon={faUser} />
+                </button>
               </li>
             </ul>
           </nav>
