@@ -4,7 +4,7 @@ export default function Document() {
   return (
     <Html lang="ro">
       <Head>
-        <meta charset="UTF-8" />
+        <meta charSet="UTF-8" />
         <meta name="description" content="Echipamente pentru caini" />
         <meta name="keywords" content="Caini, Lesa, Silviu" />
         <meta name="author" content="Devisevici Marius" />
