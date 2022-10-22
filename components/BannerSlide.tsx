@@ -16,7 +16,7 @@ const Slide = ({
         backgroundImage: backgroundImage,
       }}
     >
-      <h2 className=" sm:max-w-sm  z-20 absolute  text-2xl sm:text-3xl font-bold text-white top-2/4 left-10 -translate-y-20   md:-translate-y-10">
+      <h2 className="select-none sm:max-w-sm  z-20 absolute  text-2xl sm:text-3xl font-bold text-white top-2/4 left-10 -translate-y-20   md:-translate-y-10">
         {title}
       </h2>
       <a
