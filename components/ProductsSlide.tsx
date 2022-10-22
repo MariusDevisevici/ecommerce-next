@@ -11,7 +11,7 @@ const TopProductsSlide = ({
   product: string;
   linkTo: string;
 }) => {
-  return <div className="w-72">test</div>;
+  return <div className="w-72">test2</div>;
 };
 
 export default TopProductsSlide;
