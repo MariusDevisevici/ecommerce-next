@@ -51,7 +51,7 @@ function Banner() {
         />
         <BannerSlide
           backgroundImage={"url(/coolz.webp)"}
-          title={"7 ACTIVITATI COOL PENTRU VARA ASTaA"}
+          title={"7 ACTIVITATI COOL PENTRU VARA ASTA"}
           linkTo={""}
         />
       </Carousel>
