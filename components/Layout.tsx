@@ -11,7 +11,7 @@ function Layout({ children }: { children: any }) {
   return (
     <>
       <Head>
-        <title>Pawtrain</title>
+        <title>PAWTRAIN - ADVENTURE IS CALLING</title>
       </Head>
       <Header setNavOpen={toggleNav} navOpen={navOpen} />
       <main
