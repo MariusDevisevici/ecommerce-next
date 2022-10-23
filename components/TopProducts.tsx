@@ -1,4 +1,6 @@
 import Carousel from "react-multi-carousel";
+import { topProductsRouter } from "src/server/router/top-products";
+import { trpc } from "src/utils/trpc";
 import ProductsSlide from "./ProductsSlide";
 
 const responsive = {
@@ -19,6 +21,8 @@ const responsive = {
   },
 };
 const TopProducts = () => {
+  const { isLoading, data } = trpc.useQuery(["testgetAll"]);
+
   return (
     <section className="w-banner 2xl:w-2/3 m-auto text-center ">
       <h1 className=" text-4xl font-bold uppercase tracking-tight text-blackCustom mb-3">
@@ -34,12 +38,28 @@ const TopProducts = () => {
         arrows={false}
         responsive={responsive}
       >
-        <ProductsSlide
+        {isLoading ? (
+          <>Loading...</>
+        ) : (
+          data?.map((el) => {
+            return (
+              <ProductsSlide
+                key={el.id}
+                image={el.image}
+                category={el.category}
+                product={el.name}
+                linkTo={"#"}
+              />
+            );
+          })
+        )}
+
+        {/* <ProductsSlide
           image={"/top-products-backpack.webp"}
           category={"GENȚI & GHIOZDANE"}
           product={"Backpack"}
           linkTo={"#"}
-        />
+        /> */}
       </Carousel>
     </section>
   );
