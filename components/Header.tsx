@@ -7,6 +7,7 @@ import {
   faXmark,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Image from "next/image";
 
 function Header({
   setNavOpen,
@@ -96,7 +97,12 @@ function Header({
               <span className="bg-white w-hamburgerMenuBar h-hamburgerMenuBar d-block"></span>
               <span className="bg-white w-hamburgerMenuBar h-hamburgerMenuBar d-block"></span>
             </div>
-            <img src="/logo.svg" alt="Logo PawTrain" width={"175px"} />
+            <Image
+              src="/logo.svg"
+              alt="Logo PawTrain"
+              width={"175px"}
+              height={"46px"}
+            />
             <ul className="hidden ml-10 text-sm font-medium text-white lg:flex">
               <li className="flex items-center gap-2 p-3 cursor-pointer hover:text-primary whitespace-nowrap">
                 <a href="">PENTRU EI</a>
