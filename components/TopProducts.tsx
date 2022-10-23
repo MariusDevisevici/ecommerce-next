@@ -46,8 +46,9 @@ const TopProducts = () => {
               <ProductsSlide
                 key={el.id}
                 image={el.image}
-                category={el.category}
+                category={el.subCategory}
                 product={el.name}
+                price={el.price}
                 linkTo={"#"}
               />
             );

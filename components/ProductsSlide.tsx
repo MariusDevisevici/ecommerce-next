@@ -3,10 +3,12 @@ const TopProductsSlide = ({
   image,
   category,
   product,
+  price,
   linkTo,
 }: {
   image: string;
   category: string;
+  price: string;
   product: string;
   linkTo: string;
 }) => {
@@ -17,6 +19,11 @@ const TopProductsSlide = ({
         width={"300px"}
         height={"200px"}
       />
+      <h2 className="uppercase text-gray-600 mt-3 text-xs tracking-widest">
+        {category}
+      </h2>
+      <h3 className="text-lg mt-2 tracking-widest">{product}</h3>
+      <span className="text-primary text-xl tracking-widest">{price},00</span>
     </div>
   );
 };
