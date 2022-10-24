@@ -1,31 +1,65 @@
 import Image from "next/image";
+import { faStar } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const TopProductsSlide = ({
   image,
+  hoverImage,
   category,
   product,
   price,
   linkTo,
 }: {
   image: string;
+  hoverImage: string;
   category: string;
   price: string;
   product: string;
   linkTo: string;
 }) => {
   return (
-    <div className="w-72 select-none">
-      <div className="w-80 h-52 bg-cover relative pointer-events-auto z-10">
+    <div className="select-none hover:shadow-xl duration-500 transition-all ease-in-out pb-2 group">
+      <div className="h-52 object-contain relative pointer-events-auto z-10 ">
+        <div className="opacity-0 h-52 object-contain relative pointer-events-auto z-20 hover:opacity-100 duration-500  ease-out">
+          <Image
+            className="pointer-events-none object-contain"
+            src={`https://res.cloudinary.com/dxynua9bn/image/upload/v1666519649/products/${hoverImage}`}
+            layout={"fill"}
+          />
+        </div>
+
         <Image
-          className="pointer-events-none"
+          className="pointer-events-none object-contain"
           src={`https://res.cloudinary.com/dxynua9bn/image/upload/v1666519649/products/${image}`}
           layout={"fill"}
         />
       </div>
+      <div className="flex opacity-0 group-hover:opacity-100 ease-in-out duration-500 relative top-8 group-hover:top-0 w-full bg-white">
+        <div className=" flex-1 p-2 bg-blackCustom text-white  text-sm ">
+          <a href="">SELECTEAZA OPTIUNI</a>
+        </div>
+        <div className="p-2 text-primary text-sm  flex-1">
+          <button type="button" className="mr-auto">
+            Adauga La favorite
+          </button>
+        </div>
+      </div>
       <h2 className="uppercase text-gray-600 mt-3 text-xs tracking-widest">
         {category}
       </h2>
-      <h3 className="text-lg mt-2 tracking-widest">{product}</h3>
-      <span className="text-primary text-xl tracking-widest">{price},00</span>
+      <h3 className="text-md  tracking-widest">{product}</h3>
+      <span className=" text-primary text-md tracking-widest">
+        {price},00 lei
+      </span>
+      <div className="flex text-gray-300 justify-center mt-3 gap-1 text-xs items-center">
+        <FontAwesomeIcon icon={faStar} />
+        <FontAwesomeIcon icon={faStar} />
+        <FontAwesomeIcon icon={faStar} />
+        <FontAwesomeIcon icon={faStar} />
+        <FontAwesomeIcon icon={faStar} />
+        <span className="sm:flex hidden text-gri text-sm ml-2 hover:text-primary transition-all ease-in-out duration-300 cursor-pointer">
+          ( 0 reviews )
+        </span>
+      </div>
     </div>
   );
 };

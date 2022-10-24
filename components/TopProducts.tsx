@@ -1,5 +1,4 @@
 import Carousel from "react-multi-carousel";
-import { topProductsRouter } from "src/server/router/top-products";
 import { trpc } from "src/utils/trpc";
 import ProductsSlide from "./ProductsSlide";
 
@@ -35,7 +34,7 @@ const TopProducts = () => {
         draggable={true}
         swipeable={true}
         infinite={true}
-        arrows={false}
+        arrows={true}
         responsive={responsive}
       >
         {isLoading ? (
@@ -46,6 +45,7 @@ const TopProducts = () => {
               <ProductsSlide
                 key={el.id}
                 image={el.image}
+                hoverImage={el.hoverImage}
                 category={el.subCategory}
                 product={el.name}
                 price={el.price}
