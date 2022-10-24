@@ -37,12 +37,14 @@ const TopProductsSlide = ({
       <div className=" z-20 flex opacity-0 group-hover:opacity-100 ease-in-out duration-500 relative top-8 group-hover:top-0 w-full bg-white">
         <div className=" flex-1 p-2 bg-blackCustom text-white  text-sm font-medium ">
           <a href="">
-            <FontAwesomeIcon icon={faListCheck} /> SELECTEAZA OPTIUNI
+            <FontAwesomeIcon icon={faListCheck} />{" "}
+            <span className="hidden sm:inline-block">SELECTEAZA OPTIUNI</span>
           </a>
         </div>
         <div className="p-2 text-primary text-sm  flex-1 font-medium">
           <button type="button" className="mr-auto">
-            <FontAwesomeIcon icon={faHeart} /> Adauga La favorite
+            <FontAwesomeIcon icon={faHeart} />{" "}
+            <span className="hidden sm:inline-block">Adauga La favorite</span>
           </button>
         </div>
       </div>
