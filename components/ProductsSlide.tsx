@@ -1,5 +1,6 @@
 import Image from "next/image";
-import { faStar } from "@fortawesome/free-solid-svg-icons";
+import { faStar, faListCheck } from "@fortawesome/free-solid-svg-icons";
+import { faHeart } from "@fortawesome/free-regular-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const TopProductsSlide = ({
   image,
@@ -34,12 +35,14 @@ const TopProductsSlide = ({
         />
       </div>
       <div className="flex opacity-0 group-hover:opacity-100 ease-in-out duration-500 relative top-8 group-hover:top-0 w-full bg-white">
-        <div className=" flex-1 p-2 bg-blackCustom text-white  text-sm ">
-          <a href="">SELECTEAZA OPTIUNI</a>
+        <div className=" flex-1 p-2 bg-blackCustom text-white  text-sm font-medium ">
+          <a href="">
+            <FontAwesomeIcon icon={faListCheck} /> SELECTEAZA OPTIUNI
+          </a>
         </div>
-        <div className="p-2 text-primary text-sm  flex-1">
+        <div className="p-2 text-primary text-sm  flex-1 font-medium">
           <button type="button" className="mr-auto">
-            Adauga La favorite
+            <FontAwesomeIcon icon={faHeart} /> Adauga La favorite
           </button>
         </div>
       </div>
