@@ -20,7 +20,7 @@ const TopProductsSlide = ({
   return (
     <div className="select-none hover:shadow-xl duration-500 transition-all ease-in-out pb-2 group">
       <div className="h-44 sm:h-52 object-contain relative pointer-events-auto top-14 sm:top-0  ">
-        <div className="opacity-0 h-52 object-contain relative pointer-events-auto z-20 hover:opacity-100 duration-500  ease-out">
+        <div className="opacity-0 h-44 sm:h-52 object-contain relative pointer-events-auto z-20 hover:opacity-100 duration-500  ease-out">
           <Image
             className="pointer-events-none object-contain"
             src={`https://res.cloudinary.com/dxynua9bn/image/upload/v1666519649/products/${hoverImage}`}
