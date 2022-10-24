@@ -19,7 +19,7 @@ const TopProductsSlide = ({
 }) => {
   return (
     <div className="select-none hover:shadow-xl duration-500 transition-all ease-in-out pb-2 group">
-      <div className="h-52 object-contain relative pointer-events-auto z-10 ">
+      <div className="h-52 object-contain relative pointer-events-auto top-14 sm:top-0  ">
         <div className="opacity-0 h-52 object-contain relative pointer-events-auto z-20 hover:opacity-100 duration-500  ease-out">
           <Image
             className="pointer-events-none object-contain"
@@ -34,7 +34,7 @@ const TopProductsSlide = ({
           layout={"fill"}
         />
       </div>
-      <div className="flex opacity-0 group-hover:opacity-100 ease-in-out duration-500 relative top-8 group-hover:top-0 w-full bg-white">
+      <div className=" z-20 flex opacity-0 group-hover:opacity-100 ease-in-out duration-500 relative top-8 group-hover:top-0 w-full bg-white">
         <div className=" flex-1 p-2 bg-blackCustom text-white  text-sm font-medium ">
           <a href="">
             <FontAwesomeIcon icon={faListCheck} /> SELECTEAZA OPTIUNI
