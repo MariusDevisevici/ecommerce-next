@@ -12,9 +12,9 @@ function Activities() {
         <p className="text-md tracking-wider mb-6">
           Descoperă acum produsele recomandate în funcție de activitate
         </p>
-        <div className="grid grid-cols-8 gap-2">
+        <div className=" grid  grid-cols-8 gap-4">
           <div
-            className="col-span-3 relative  pt-96 pb-10 text-left bg-center bg-cover after:absolute after:inset-0 after:z-10 after:bg-black after:opacity-30 after:duration-300  hover:after:bg-primary hover:after:opacity-80 "
+            className="col-span-8 sm:col-span-4 lg:col-span-3 relative  pt-96 pb-10 text-left bg-center bg-cover after:absolute after:inset-0 after:z-10 after:bg-black after:opacity-30 after:duration-300  hover:after:bg-primary hover:after:opacity-80 "
             style={{
               backgroundImage: "url(/activity_biking.webp)",
             }}
@@ -31,7 +31,7 @@ function Activities() {
             </a>
           </div>
           <div
-            className=" col-span-2 pt-96 pb-10 relative  text-left bg-center bg-cover after:absolute after:inset-0 after:z-10 after:bg-black after:opacity-30 after:duration-300  hover:after:bg-primary hover:after:opacity-80 "
+            className="col-span-8  sm:col-span-4 lg:col-span-2 pt-96 pb-10 relative  text-left bg-center bg-cover after:absolute after:inset-0 after:z-10 after:bg-black after:opacity-30 after:duration-300  hover:after:bg-primary hover:after:opacity-80 "
             style={{
               backgroundImage: "url(/activity_safety_setting_1-1.webp)",
             }}
@@ -47,9 +47,9 @@ function Activities() {
               <FontAwesomeIcon icon={faArrowRightLong} className="ml-2" />
             </a>
           </div>
-          <div className="col-span-3 flex flex-col gap-4 ">
+          <div className="col-span-8 lg:col-span-3 flex-col sm:flex-row flex lg:flex-col gap-4 ">
             <div
-              className="relative h-64 bg-center bg-cover text-left after:absolute after:inset-0 after:z-10 after:bg-black after:opacity-30 after:duration-300  hover:after:bg-primary hover:after:opacity-80  "
+              className="relative w-full h-64 bg-center bg-cover text-left after:absolute after:inset-0 after:z-10 after:bg-black after:opacity-30 after:duration-300  hover:after:bg-primary hover:after:opacity-80  "
               style={{
                 backgroundImage: "url(/activity_running-1-1.webp)",
               }}
@@ -66,7 +66,7 @@ function Activities() {
               </a>
             </div>
             <div
-              className="relative h-64 bg-center bg-cover text-left after:absolute after:inset-0 after:z-10 after:bg-black after:opacity-30 after:duration-300  hover:after:bg-primary hover:after:opacity-80 "
+              className="relative w-full h-64 bg-center bg-cover text-left after:absolute after:inset-0 after:z-10 after:bg-black after:opacity-30 after:duration-300  hover:after:bg-primary hover:after:opacity-80 "
               style={{
                 backgroundImage: "url(/hiking_1.webp)",
               }}

@@ -62,13 +62,26 @@ model VerificationToken {
 }
 
 model Product {
-  id       String @id @default(cuid())
-  name     String
-  image    String
-  hoverImage String
-  price    String
-  category String
+  id          String  @id @default(cuid())
+  name        String
+  image       String
+  hoverImage  String
+  price       String
+  category    String
   subCategory String
-  topProduct Boolean
-  stock    Int
+  topProduct  Boolean
+  stock       Int
+}
+
+model Category {
+  id          String        @id @default(cuid())
+  name        String
+  subCategory subCategory[]
+}
+
+model subCategory {
+  id       String     @id @default(cuid())
+  name     String
+  image String
+  category Category[]
 }
