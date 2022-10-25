@@ -5,12 +5,12 @@ import SubCategorySlide from "./SubCategorySlide";
 const responsive = {
   desktop: {
     breakpoint: { max: 3000, min: 1024 },
-    items: 4,
+    items: 3,
     partialVisibilityGutter: 40, // this is needed to tell the amount of px that should be visible.
   },
   tablet: {
     breakpoint: { max: 1024, min: 594 },
-    items: 3,
+    items: 2,
     partialVisibilityGutter: 30, // this is needed to tell the amount of px that should be visible.
   },
   mobile: {
@@ -26,7 +26,7 @@ const SubCategoriesCarousel = () => {
   console.log(data);
 
   return (
-    <section className="w-banner 2xl:w-2/3 m-auto  text-center mt-24 ">
+    <section className="w-banner 2xl:w-2/3 m-auto  text-center mt-20 ">
       <Carousel
         draggable={true}
         autoPlay={true}
