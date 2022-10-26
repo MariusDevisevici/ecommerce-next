@@ -2,29 +2,29 @@ import { responsive } from "constants/responsive";
 import Carousel from "react-multi-carousel";
 import { trpc } from "src/utils/trpc";
 import TopProductsSlide from "./ProductsSlide";
-
-const TopProducts = () => {
-  const { isLoading, data } = trpc.useQuery(["testgetAll"]);
+function ForYouMain() {
+  const { isLoading, data } = trpc.useQuery(["testgetMainPage"]);
+  console.log(data);
 
   return (
-    <section className="w-banner 2xl:w-2/3 m-auto text-center ">
+    <section className="w-banner 2xl:w-2/3 m-auto text-center mt-24 ">
       <h1 className=" text-4xl font-bold uppercase tracking-tight text-blackCustom mb-3">
-        Produse de Top
+        Pentru Voi
       </h1>
       <p className="text-md tracking-wider mb-6">
-        Cele mai îndrăgite produse adunate la un loc
+        Nu uitați să treceți cu privirea și peste produsele destinate vouă
       </p>
       <Carousel
-        draggable={true}
-        swipeable={true}
-        infinite={true}
-        arrows={true}
+        draggable={false}
+        swipeable={false}
+        infinite={false}
+        arrows={false}
         responsive={responsive}
       >
         {isLoading ? (
           <>Loading...</>
         ) : (
-          data?.map((el) => {
+          data?.map((el: any) => {
             return (
               <TopProductsSlide
                 key={el.id}
@@ -40,14 +40,14 @@ const TopProducts = () => {
         )}
 
         {/* <ProductsSlide
-          image={"/top-products-backpack.webp"}
-          category={"GENȚI & GHIOZDANE"}
-          product={"Backpack"}
-          linkTo={"#"}
-        /> */}
+      image={"/top-products-backpack.webp"}
+      category={"GENȚI & GHIOZDANE"}
+      product={"Backpack"}
+      linkTo={"#"}
+    /> */}
       </Carousel>
     </section>
   );
-};
+}
 
-export default TopProducts;
+export default ForYouMain;
