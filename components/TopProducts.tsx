@@ -18,7 +18,7 @@ const TopProducts = () => {
         draggable={true}
         swipeable={true}
         infinite={true}
-        arrows={true}
+        arrows={false}
         responsive={responsive}
       >
         {isLoading ? (
